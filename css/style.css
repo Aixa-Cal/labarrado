@@ -1173,9 +1173,6 @@ footer > #info > article > ul.c-info > li:before {
 	top: 8px;
 }
 
-footer > #info > article > p {
-}
-
 footer > #info > article > ul.c-info > li:first-child:before {
 	content: url('../images/pin-icon.png')
 }
