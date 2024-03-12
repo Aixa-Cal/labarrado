@@ -188,12 +188,11 @@ h5 span {
 
 h6 {
     font-size: 1em;
-    color: #323232;
+    color: #DDBD6F;
     line-height: 1em;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
 
 a.square-button {
 	display: block;
@@ -240,6 +239,24 @@ input, textarea {
 	clear: both;
 }
 
+
+header > figure img {
+	
+		height: 100px;
+		width: 200px;
+	
+}
+
+
+header h1, header h2 {
+    font-size: 2.125em;
+    padding: 15px 0px 0px 51px;
+}
+
+
+#info {
+font-size: 1.20em;
+}
 
 
 /***************************************/
@@ -352,7 +369,6 @@ header > figure {
 	/* background-size: 2px 2px, cover !important; */
 	height: 200px;
 	text-align: center;
-	padding-top: 130px;
 }
 
 #menu-banner {
@@ -399,6 +415,8 @@ header > figure {
 	margin-left: -179px;	
 }
 
+
+
 /*---------------
   8.1 DISHES
 ---------------*/
@@ -431,9 +449,9 @@ header > figure {
     display: inline-flex;
     color: #fff;
     font-size: 1.25em;
-    font-weight: 100;
+    font-weight: 200;
     padding: 5px;
-    background-color: #323232;
+    background-color: #D21D1D;
     border-radius: 5px;
     max-width: 24em;
     margin: 10px;
@@ -1149,13 +1167,9 @@ footer > #info > article > p {
 	margin-bottom: 20px;
 }
 
-
 .c-info p {
-
 	color: #ffff;
 }
-
-
 
 
 footer > #info > article > ul.c-info > li {
@@ -1185,6 +1199,25 @@ footer > #info > article > ul.c-info > li:nth-child(3):before {
 	content: url('../images/phone-icon.png')
 }
 
+.c-info img {
+	height: 20px;
+	width: 20px;
+}
+
+i.fa-solid.fa-location-crosshairs {
+	color: white;
+  }
+
+.c-info li {
+	display: flex; /* Make list items behave like rows */
+	align-items: center; /* Vertically align content within each list item */
+	margin-bottom: 5px; /* Add some spacing between list items */
+  }
+  
+  .c-info li img {
+	margin-right: 10px; /* Add some margin between icon and text */
+  }
+
 
 
 /*---------------------
@@ -1193,7 +1226,7 @@ footer > #info > article > ul.c-info > li:nth-child(3):before {
 footer > #info > article > article.op-hours > div {
 	overflow: hidden;
 	height: 37px;
-	border-bottom: 1px solid #373737;
+	border-bottom: 1px solid #DDBD6F ;
 }
 
 footer > #info > article > article.op-hours > div:last-child {
@@ -1271,6 +1304,11 @@ footer #copy > nav > ul > li > a:hover {
 /***************************************/
 /* 19. MENU */
 /***************************************/
+
+.dia {
+    color: #D21D1D;
+	font-size: 1.25em;
+}
 
 #menu{
 	padding-bottom: 30px;
@@ -1375,6 +1413,12 @@ footer #copy > nav > ul > li > a:hover {
 }
 
 #menu-nav.img-nav > li:nth-child(7) > a {
+	background: url('../images/menu/platodeldia.png');
+	margin: 20px;
+
+}
+
+#menu-nav.img-nav > li:nth-child(8) > a {
 	background: url('../images/menu/variados.png');
 	margin: 20px;
 
@@ -1837,6 +1881,9 @@ footer #copy > nav > ul > li > a:hover {
 	padding-top: 100px;
 }
 
+
+
+
 #menu-nav > li {
     display: inline-block;
     position: relative;
@@ -2225,6 +2272,17 @@ ul.dishes > li > p:last-child {
 		line-height: 1em;
 	}
 
+	header > figure {
+		width: 145px;
+		top: 47px;
+		margin-left: -99px;
+	}
+
+	header h1, header h2 {
+		font-size: 2.125em;
+		padding: 15px 0px 0px 51px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -2344,6 +2402,17 @@ ul.dishes > li > p:last-child {
 		line-height: 1em;
 	}
 
+	header > figure {
+		width: 145px;
+		top: 47px;
+		margin-left: -99px;
+	}
+
+	header h1, header h2 {
+		font-size: 2.125em;
+		padding: 15px 0px 0px 51px;
+	}
+
 
 }
 
@@ -2427,5 +2496,9 @@ ul.dishes > li > p:last-child {
 		line-height: 1em;
 	}
 
-	
+	header > figure {
+		width: 145px;
+		top: 47px;
+		margin-left: -99px;
+	}
 }
