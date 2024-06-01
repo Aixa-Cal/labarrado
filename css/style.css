@@ -15,7 +15,7 @@ li p  h3{
 }
 
 .container {
-    padding-top: 7em; /* Aumenta el padding-top para evitar que el contenido se esconda detrás del navbar */
+    padding-top: 8em; /* Aumenta el padding-top para evitar que el contenido se esconda detrás del navbar */
 }
 
 .banner {
