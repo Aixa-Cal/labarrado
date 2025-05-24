@@ -1,804 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>Menú</title>
-	</head>
-	<body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Menú Principal</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-		<header class="banner">
-			<div class="banner-content">
-				<img src="./images/logolabarra/logolabarrablanco.png"
-					alt="Logo de la Empresa" class="logo">
-			</div>
-		</header>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f9f9f9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
 
-		<nav class="navbar">
-			<a href="#Tradicionales">TRADICIONALES</a>
-			<a href="#Premium">PREMIUM</a>
-			<a href="#Especialidades">ESPECIALIDADES</a>
-			<a href="#Burguers">LOS BURGUERS</a>
-			<a href="#Callejeros">LOS CALLEJEROS</a>
-			<a href="#KidsMenu">KIDS MENU</a>
-			<a href="#Pollobarra">EL POLLO DE LA BARRA</a>
-			<a href="#plato-del-dia">PLATO DEL DIA</a>
-			<a href="#Jugos">JUGOS Y BATIDAS</a>
-			<a href="#Otros">OTROS Y ADICIONALES</a>
+		.container {
+			max-width: 800px;
+			background: white;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			text-align: center;
+		}
 
-			
-		</nav>
+		h1 {
+			margin-bottom: 10px;
+		}
 
-		<body>
-			<div class="container">
-				<main class="content">
-					<div class="menu" id="Tradicionales">
-						<h2 class="menu-group-heading">TRADICIONALES</h2>
-						<div class="menu-group">
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">DERRETIDO DE QUESO</span>
-										<span class="menu-item-price">$225</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">DOS QUESOS</span>
-										<span class="menu-item-price">$225</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">JAMON Y QUESO</span>
-										<span class="menu-item-price">$225</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">HUEVO Y QUESO</span>
-										<span class="menu-item-price">$225</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">SALAMI Y QUESO</span>
-										<span class="menu-item-price">$225</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">PAVO Y QUESO</span>
-										<span class="menu-item-price">$275</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">POLLO Y QUESO</span>
-										<span class="menu-item-price">$275</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">PIERNA Y QUESO</span>
-										<span class="menu-item-price">$275</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">DIETETICO</span>
-										<span class="menu-item-price">$275</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">COMPLETO</span>
-										<span class="menu-item-price">$275</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">SUPER ESPECIAL</span>
-										<span class="menu-item-price">$275</span>
-									</h3>
-								</div>
-							</div>
-						</div>
-					</div>
+		p {
+			margin-bottom: 30px;
+		}
 
-					<div class="menu" id="Premium">
-						<h2 class="menu-group-heading">
-							PREMIUM <span class="category-price">$475</span>
-						</h2>
-						<div class="menu-group">
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">BARRA CLUB</span>
-									</h3>
-									<p class="menu-item-desc">
-										Crema de pollo especial, jamón de cerdo, pierna de cerdo,
-										queso cheddar, queso danés, tocineta, tomate y lechuga en tres
-										lonjas de pan cuadrado.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">MEGA BARRA</span>
-									</h3>
-									<p class="menu-item-desc">
-										Jamón de cerdo, queso cheddar, queso danés, tocineta, pierna
-										de cerdo, pechuga de pollo, tomate y lechuga en pan francés.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">LA BARRA CUBANA</span>
-									</h3>
-									<p class="menu-item-desc">
-										Pierna de cerdo, queso danés. jamón de cerdo, pepinillos,
-										mayonesa y mostaza en pan francés.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">CARNIVORO</span>
-									</h3>
-									<p class="menu-item-desc">
-										Pierna de cerdo, pechuga de pollo, jamón de cerdo, jamón de
-										pavo, tocineta, tomate y lechuga en pan francés.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">LA BARRA ITALIANA</span>
-									</h3>
-									<p class="menu-item-desc">
-										Salami genoa, queso cheddar, queso danés, jamón de cerdo,
-										tomate, lechuga con aceite de oliva y albahaca en pan francés.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+		.menu-grid {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+			flex-wrap: wrap;
+		}
 
-					<div class="menu" id="Especialidades">
-						<h2 class="menu-group-heading">
-							ESPECIALIDADES
-						</h2>
-						<div class="menu-group">
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-name">
-										CLUB FAMILIAR (8 PORCIONES) <span class="category-price">$875</span>
-									</h3>
-									<p class="menu-item-desc">
-										Crema de pollo especial, jamón de cerdo, queso cheddar, queso
-										danés, tocineta, lechuga y tomate en tres tapas de pan
-										cuadrado acompañado de nuestras crujientes papas fritas con
-										queso fundido y puerro picado.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-name">
-										PAL' GRUPO <span class="category-price">$1,100</span>
-									</h3>
-									<p class="menu-item-desc">
-										Jamón de cerdo, queso cheddar, queso danés, tocineta, pierna
-										de cerdo, pechuga de pollo, tomate y lechuga en pan francés.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+		.menu-option {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: transform 0.3s;
+			width: 150px;
+			height: 150px;
+		}
 
-					<div class="menu" id="Burguers">
-						<h2 class="menu-group-heading">LOS BURGUERS + PAPAS </h2>
-						<div class="menu-group">
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">BACON CHEESEBURGUER</span>
-									</h3>
-									<p class="menu-item-desc">
-										2 Carnes angus de 4oz., tocineta, queso cheddar, queso
-										fundido, salsa rosada especial, tomate, lechuga y cebolla en
-										pan brioche.
-									</p>
-									<div class="burger-details">
-										<table>
-											<tr>
-												<th>Single</th>
-												<th>Double</th>
-												<th>Triple</th>
-											</tr>
-											<tr>
-												<td>$375</td>
-												<td>$450</td>
-												<td>$525</td>
-											</tr>
-										</table>
-										<img src="./images/baconcheese.png"
-											alt="Imagen de Bacon Cheeseburger">
-									</div>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<h3 class="menu-item-name">
-											CHICKEN BACONCHEESE <span class="category-price">$425</span>
-										</h3>
-									</h3>
-									<p class="menu-item-desc">
-										Sabrosa y crocante pechuga de pollo, tocineta, queso danés,
-										lechuga, tomate y cebolla con nuestra deliciosa salsa rosada
-										especial en pan brioche.
-									</p>
-									<div class="burger-details">
-										<img src="./images/Chickenbacon.png" alt="ChickenCheeseburger"
-											class="chickenbacon">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+		.menu-option:hover {
+			transform: scale(1.05);
+		}
 
-					<div class="menu" id="Callejeros">
-						<h2 class="menu-group-heading">
-							CALLEJEROS <span class="category-price">$325</span>
-						</h2>
-						<div class="menu-group">
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">MEGA CHIMI</span>
-									</h3>
-									<p class="menu-item-desc">
-										Carne Premium de 6 Oz., queso cheddar, tocineta, repollo con
-										zanahoria, cebolla, tomate, pan de agua bien tostado.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">MEGA HOT DOG</span>
-									</h3>
-									<p class="menu-item-desc">
-										Salchicha alemana de 12", repollo con zanahoria, queso cheddar
-										rallado, salsa rosada especial, queso fundido, ketchup, mayonesa y un
-										toque de mostaza.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">PAPA SUPREMA DE POLLO</span>
-									</h3>
-									<p class="menu-item-desc">
-										Papas fritas crujientes, con queso fundido, salsa rosada especial,
-										pechuga de ollo o cerdo, tocineta y puerro picado.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">WRAP PECHUGUITAS CROCANTES</span>
-									</h3>
-									<p class="menu-item-desc">
-										Pechuga de pollo empanizada, tocineta, lechuga, tomate y cebolla con
-										nuestras deliciosas salsas de ajo-perejil y rosada especial.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">WRAP CREMA DE POLLO ESPECIAL</span>
-									</h3>
-									<p class="menu-item-desc">
-										Doble crema de pollo especial, lechuga, tomate y cebolla, con la salsa
-										que prefieras.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="menu" id="KidsMenu">
-						<h2 class="menu-group-heading">
-							KID'S MENU <span class="category-price">$225</span>
-						</h2>
-						<div class="menu-group">
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">El Pollito</span>
-									</h3>
-									<p class="menu-item-desc">
-										2 pechuguitas con la salta que prefieras más papas fritas.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">El Jamberguito</span>
-									</h3>
-									<p class="menu-item-desc">
-										Una carne angus de 4oz., queso cheddar, ketchup y mayonesa en pan
-										brioche más papas fritas.
-									</p>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">La Supremita</span>
-									</h3>
-									<p class="menu-item-desc">
-										Papas fritas crujientes con queso fundido, salsa rosada especial y
-										pechuguitas picadas encima.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="menu" id="Pollobarra">
-						<h2 class="menu-group-heading">EL POLLO DE LA BARRA</h2>
-						<div class="menu-group">
-							<!-- ALITAS -->
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">ALITAS</span>
-									</h3>
-									<p>Pídelas sin salsa o bañadas en salsa BBQ, Honey Mustard o
-										Búffalo</p>
-									<div class="menu-item-details">
-										<table class="price-table">
-											<thead>
-												<tr>
-													<th>6 ALITAS</th>
-													<th>12 ALITAS</th>
-													<th>18 ALITAS</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>$275</td>
-													<td>$475</td>
-													<td>$725</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-
-							<!-- PECHUGUITAS + PAPAS -->
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">PECHUGUITAS</span>
-									</h3>
-									<p>Crujientes y jugosas tiras de pollo acompañadas con papas
-										fritas.</p>
-
-									<div class="menu-item-details">
-										<table class="price-table">
-											<thead>
-												<tr>
-													<th>3 PIEZAS</th>
-													<th>5 PIEZAS</th>
-													<th>10 PIEZAS</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>$275</td>
-													<td>$425</td>
-													<td>$775</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-
-							<!-- PICA POLLO + PAPAS -->
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">PICA POLLO</span>
-									</h3>
-									<p>Repleto de sabor y preparado con una cocción perfecta acompañado de
-										papas fritas.</p>
-
-									<div class="menu-item-details">
-										<table class="price-table">
-											<thead>
-												<tr>
-													<th>2 PIEZAS</th>
-													<th>3 PIEZAS</th>
-													<th>4 PIEZAS</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>$225</td>
-													<td>$295</td>
-													<td>$365</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="menu" id="plato-del-dia">
-						<h2 class="menu-group-heading">
-						  PLATO DEL DIA 
-						  <span class="category-price">$175 (Res $200)</span>
-						</h2>
-						<div class="menu-group">
-						  <div class="menu-item">
-							<div class="menu-item-text">
-							  <div class="daily-special">
-								<h3 class="special-day">Lunes</h3>
-								<p class="special-description">Cazuela de berenjenas con cerdo</p>
-								<p class="special-options">
-								  <ul style="
-								  text-align: left;
-							  ">
-									<li>Arroz blanco</li>
-									<li>Moro de guandules</li>
-									<li>Cazuela de berenjenas con cerdo</li>
-									<li>Chicharrón de pollo</li>
-									<li>Pollo guisado al vino</li>
-									<li>Habichuelas guisadas</li>
-									<li>Ensalada verde</li>
-									<li>Ensalada de pastas</li>
-									<li>Arepitas de maíz</li>
-								  </ul>
-								</p>
-							  </div>
-							</div>
-						  </div>
-						  <div class="menu-item">
-							<div class="menu-item-text">
-							  <div class="daily-special">
-								<h3 class="special-day">Martes</h3>
-								<p class="special-description">Fajitas de cerdo con ajíes y cebolla a la barbacoa</p>
-								<p class="special-options">
-								  <ul style="
-								  text-align: left;
-							  ">
-									<li>Arroz blanco</li>
-									<li>Moro de habichuelas</li>
-									<li>Fajitas de cerdo con ajíes y cebolla a la barbacoa</li>
-									<li>Chicharrón de pollo</li>
-									<li>Estofado de res con papas y zanahorias</li>
-									<li>Habichuelas guisadas</li>
-									<li>Guandules guisados</li>
-									<li>Ensalada de pasta (Según disponibilidad)</li>
-									<li>Coleslow</li>
-									<li>Torrejas de berenjena</li>
-								  </ul>
-								</p>
-							  </div>
-							</div>
-						  </div>
-						  <div class="menu-item">
-							<div class="menu-item-text">
-							  <div class="daily-special">
-								<h3 class="special-day">Miércoles</h3>
-								<p class="special-description">Chuletas salteadas con cebolla en salsa teriyaki</p>
-								<p class="special-options">
-								  <ul style="
-								  text-align: left;
-							  ">
-									<li>Arroz blanco</li>
-									<li>Moro de guandules</li>
-									<li>Chuletas salteadas con cebolla en salsa teriyaki</li>
-									<li>Chicharrón de pollo</li>
-									<li>Pollo guisado al vino</li>
-									<li>Habichuelas guisadas</li>
-									<li>Guineítos con mojo de cebollas y ajíes</li>
-									<li>Ensalda verde</li>
-									<li>Coleslow (Según disponibilidad)</li>
-									<li>Arepas de maíz</li>
-								  </ul>
-								</p>
-							  </div>
-							</div>
-						  </div>
-						  <div class="menu-item">
-							<div class="menu-item-text">
-							  <div class="daily-special">
-								<h3 class="special-day">Jueves</h3>
-								<p class="special-description">Albóndigas a la criolla</p>
-								<p class="special-options">
-								  <ul style="
-								  text-align: left;
-							  ">
-									<li>Arroz blanco</li>
-									<li>Moro de habichuelas negras, guandules o arroz con maíz (Según disponibilidad)</li>
-									<li>Albóndigas a la criolla</li>
-									<li>Chicharrón de pollo</li>
-									<li>Pollo al caldero en salsa barbacoa</li>
-									<li>Habichuelas guisadas</li>
-									<li>Guandules guisados</li>
-									<li>Ensalada verde</li>
-									<li>Ensalada de vegetales hervidos</li>
-									<li>Torrejas de berenjena</li>
-								  </ul>
-								</p>
-							  </div>
-							</div>
-						  </div>
-						  <div class="menu-item">
-							<div class="menu-item-text">
-							  <div class="daily-special">
-								<h3 class="special-day">Viernes</h3>
-								<p class="special-description">Locrio de pollo y chuleta ahumada</p>
-								<p class="special-options">
-								  <ul style="
-								  text-align: left;
-							  ">
-									<li>Locrio de pollo y chuleta ahumada</li>
-									<li>Arroz blanco</li>
-									<li>Chicharrón de pollo</li>
-									<li>Estofado de res con papas y zanahoria (Según disponibilidad)</li>
-									<li>Ensalada de pasta</li>
-									<li>Ensalada verde o Vegetales hervidos</li>
-									<li>Arepitas de maíz</li>
-								  </ul>
-								</p>
-							  </div>
-							</div>
-						  </div>
-						  <div class="menu-item">
-							<div class="menu-item-text">
-							  <div class="daily-special">
-								<h3 class="special-day">Sábado</h3>
-								<p class="special-description">Chofán Teriyaki</p>
-								<p class="special-options">
-								  <ul style="
-								  text-align: left;
-							  ">
-									<li>Chofán teriyaki</li>
-									<li>Arroz blanco</li>
-									<li>Chicharrón de pollo</li>
-									<li>Pollo guisado al vino</li>
-									<li>Habichuelas guisadas</li>
-									<li>Guandules guisados</li>
-									<li>Ensalada de pasta</li>
-									<li>Ensalada verde</li>
-									<li>Arepitas de maíz</li>
-								  </ul>
-								</p>
-							  </div>
-							</div>
-						  </div>
-						</div>
-					  </div>
-					  
-
-					<div class="menu" id="Jugos">
-						<h2 class="menu-group-heading">JUGOS Y BATIDAS</h2>
-						<div class="menu-group">
-
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">FRUTAS</h3>
-									<div class="fruit-list two-column">
-										<div class="fruit-card">
-											<span class="fruit-name">NATURAL</span>
-											<span class="fruit-price">$90</span>
-										</div>
-										<ul>
-											<li>Lulo</li>
-											<li>Lechosa</li>
-											<li>Fresa</li>
-											<li>Piña</li>
-											<li>Ciruela</li>
-											<li>Melón</li>
-											<li>China</li>
-											<li>Cereza</li>
-											<li>Granadillo</li>
-											<li>Guanábana</li>
-										</ul>
-
-										<div class="fruit-card">
-											<span class="fruit-name">CON C@</span>
-											<span class="fruit-price">$140</span>
-										</div>
-										<ul>
-											<li>Chinola</li>
-											<li>Guineo</li>
-											<li>Limón</li>
-											<li>Mango</li>
-											<li>Zapote</li>
-											<li>Sandía Limón</li>
-											<li>Chocobatida</li>
-											<li>Leche Batida</li>
-											<li>Tamarindo</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="menu" id="Otros">
-						<h2 class="menu-group-heading">OTROS Y ADICIONALES</h2>
-						<div class="menu-group">
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">PAPAS FRITAS</span>
-										<span class="menu-item-price">$90</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">AGUA Y REFRESCO</span>
-										<span class="menu-item-price">$40</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">ADEREZOS</span>
-										<span class="menu-item-price">$20</span>
-									</h3>
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item-text">
-									<h3 class="menu-item-heading">
-										<span class="menu-item-name">ADICIONALES</span>
-										<span class="menu-item-price">$75</span>
-									</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</main>
+		.menu-option img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>¡Bienvenido a La Barra!</h1>
+		<p>Seleccione el menú del negocio que desea ver:</p>
+		<div class="menu-grid">
+			<a href="menu-labarra.html" class="menu-option">
+				<img src="/images/logolabarra/logorojolb.png" alt="Menú La Barra" />
+			</a>
+			<a href="menu-sportbar.html" class="menu-option">
+				<img src="/images/logolabarra/logolabarrasportsbar.png" alt="Menú Sport Bar" />
+			</a>
+			<a href="menu-carwash.html" class="menu-option">
+				<img src="/images/logolabarra/logocarwash.png" alt="Menú Car Wash" />
+			</a>
 		</div>
-
-		<script src="./scripts.js"></script>
-	</body>
-
-	<footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>SUCURSALES</h3>
-                <div class="branch">
-                    <h4>Sucursal Atala:</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> AV. Independencia, Plaza Atala I, frente a la Cervecería Nacional</p>
-					<p><i class="fas fa-phone"></i> (809) 842-6060</p>
-                    <p>
-                        <a href="https://wa.me/8098426060" target="_blank">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                        <a href="https://www.google.com/maps/dir/18.4359322,-69.9907653/La+Barra,+Centro+Comercial+Atala+1,+Avenida+Independencia,+Santo+Domingo/@18.4425573,-69.9833981,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8ea561a220bf77a3:0xb6c32ac7eee1d820!2m2!1d-69.9398021!2d18.4437285?entry=ttu" target="_blank">
-                            <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
-                        </a>
-                    </p>
-                </div>
-                <div class="branch">
-                    <h4>Sucursal Atalaya del Mar:</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> AV. Independencia, Km 11 de la carretera Sánchez, en Torres Atalaya del Mar</p>
-                    <p><i class="fas fa-phone"></i> (829) 470-8262</p>
-                    <p>
-                        <a href="https://wa.me/8294708262" target="_blank">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                        <a href="https://www.google.com/maps/dir/18.4359322,-69.9907653/La+Barra,+KM+10.5+de+la,+Torres+Atalaya+del+Mar,+Avenida+Independencia,+Santo+Domingo/@18.429639,-69.985847,13z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8ea561f339ae7e61:0x7a92254a7fd542f6!2m2!1d-69.9803175!2d18.4292295?entry=ttu" target="_blank">
-                            <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>HORARIO</h3>
-                <div class="schedule">
-                    <div class="schedule-item">
-                        <h4>Sucursal Atala:</h4>
-                        <ul>
-                            <li><span>Lunes:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Martes:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Miércoles:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Jueves:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Viernes:</span> 24 Horas</li>
-                            <li><span>Sábado:</span> 24 Horas</li>
-                            <li><span>Domingo:</span> 24 Horas</li>
-                        </ul>
-                    </div>
-                    <div class="schedule-item">
-                        <h4>Sucursal Atalaya del Mar:</h4>
-                        <ul>
-                            <li><span>Lunes:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Martes:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Miércoles:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Jueves:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Viernes:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Sábado:</span> 7:00 AM - 11:00 PM</li>
-                            <li><span>Domingo:</span> 7:00 AM - 11:00 PM</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-		<div class="footer-section social-media">
-			<h3>Síguenos <span> @labarrado</span></h3>
-			<p>
-				<a href="https://www.instagram.com/labarrado/" target="_blank">
-					<i class="fab fa-instagram"></i> Instagram
-				</a>
-				<a href="https://web.facebook.com/labarraDo/?_rdc=1&_rdr" target="_blank">
-					<i class="fab fa-facebook"></i> Facebook
-				</a>
-			</p>
-		</div>
-
-		<div class="footer-label">
-			<P>La Barra 2024</P>
-		</div>
-    </footer>
-
-
-
+	</div>
+</body>
 </html>
