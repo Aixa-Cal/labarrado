@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menú Principal</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Menú Principal</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f1f1f1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f9f9f9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
 
-    .container {
-      max-width: 900px;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+		.container {
+			max-width: 800px;
+			background: white;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			text-align: center;
+		}
 
-    h1 {
-      margin-bottom: 10px;
-    }
+		h1 {
+			margin-bottom: 10px;
+		}
 
-    p {
-      margin-bottom: 40px;
-    }
+		p {
+			margin-bottom: 30px;
+		}
 
-    .menu-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
+		.menu-grid {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+			flex-wrap: wrap;
+		}
 
-    .menu-option {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      width: 180px;
-      height: 180px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
+		.menu-option {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: transform 0.3s;
+			width: 150px;
+			height: 150px;
+		}
 
-    .menu-option:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    }
+		.menu-option:hover {
+			transform: scale(1.05);
+		}
 
-    .menu-option img {
-      max-width: 80px;
-      height: auto;
-      margin-bottom: 15px;
-    }
-
-    .menu-option span {
-      font-weight: bold;
-      font-size: 1rem;
-      color: #333;
-    }
-  </style>
+		.menu-option img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	</style>
 </head>
 <body>
-  <div class="container">
-    <h1>¡Bienvenido a La Barra!</h1>
-    <p>Seleccione el menú del negocio que desea ver:</p>
-    <div class="menu-grid">
-      <a href="menu-labarra.html" class="menu-option">
-        <img src="images/logolabarra/logorojolb.png" alt="Menú La Barra" />
-      </a>
-      <a href="menu-sportbar.html" class="menu-option">
-        <img src="images/logolabarra/logolabarrasportsbar.png" alt="Menú Sport Bar" />
-      </a>
-      <a href="menu-carwash.html" class="menu-option">
-        <img src="images/logolabarra/logocarwash.png" alt="Menú Car Wash" />
-      </a>
-    </div>
-  </div>
+	<div class="container">
+		<h1>¡Bienvenido a La Barra!</h1>
+		<p>Seleccione el menú del negocio que desea ver:</p>
+		<div class="menu-grid">
+			<a href="menu-labarra.html" class="menu-option">
+				<img src="images/logolabarra/logorojolb.png" alt="Menú La Barra" />
+			</a>
+			<a href="menu-sportbar.html" class="menu-option">
+				<img src="images/logolabarra/logolabarrasportsbar.png" alt="Menú Sport Bar" />
+			</a>
+			<a href="menu-carwash.html" class="menu-option">
+				<img src="images/logolabarra/logocarwash.png" alt="Menú Car Wash" />
+			</a>
+		</div>
+	</div>
 </body>
 </html>
